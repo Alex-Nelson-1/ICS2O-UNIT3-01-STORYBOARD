@@ -13,10 +13,7 @@
       rel="canonical"
       href="https://Alex-Nelson-1.github.io/ICS2O-UNIT3-01-STORYBOARD/"
     />
-    <link
-      rel="manifest"
-      href="/ICS2O-UNIT3-01-STORYBOARD/manifest.webmanifest"
-    />
+    <link rel="manifest" href="/ICS2O-UNIT3-01-STORYBOARD/manifest.webmanifest" />
     <link rel="stylesheet" href="./css/styles.css" />
     <!--- None blocking for Lighthouse report --->
     <!--- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously --->
@@ -59,24 +56,68 @@
         </div>
       </header>
       <main class="mdl-layout__content">
-        <p></p>
-        <img
-          src="./images/notebook-animation.svg"
-          alt="Computer"
-          width="25%"
-          height="25%"
-        />
-        <p></p>
-        <!-- Raised button with ripple -->
+        <!--Text field accepts input for side length A-->
+        <form action="#">
+          Side length A: 
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="sideA"
+            />
+            <!--This will control the textfields error message and label-->
+            <label class="mdl-textfield__label" for="sideA"
+              >Side A</label
+            >
+            <span class="mdl-textfield__error">Numbers Only!</span>
+          </div>
+          cm
+        </form>
+        <!--Text field accepts input for side length B-->
+        <form action="#">
+          Side length B: 
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="sideB"
+            />
+            <!--This will control the textfields error message and label-->
+            <label class="mdl-textfield__label" for="sideB"
+              >Side B</label
+            >
+            <span class="mdl-textfield__error">Numbers Only!</span>
+          </div>
+          cm
+        </form>
+        <!--Text field accepts input for height-->
+        <form action="#">
+          Height:
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="height"
+            />
+            <!--This will control the textfields error message and label-->
+            <label class="mdl-textfield__label" for="height"
+              >Height</label
+            >
+            <span class="mdl-textfield__error">Letters Only!</span>
+          </div>
+          cm
+        </form>
+        <!-- Accent-colored raised button that controls JS function -->
         <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="myButtonClicked()"
+          class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent"
+          onclick="calculateArea()"
         >
-          Say "Hello, World!"
+          Calculate Area
         </button>
-        <!-- basic text -->
-        <p></p>
-        <div id="hello-world"></div>
+        <div id="areaOfTrapazoid"></div>
       </main>
     </div>
   </body>
