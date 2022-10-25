@@ -23,7 +23,8 @@ function calculateArea() {
   const lengthB = parseFloat(document.getElementById("sideB").value)
   const height = parseFloat(document.getElementById("heigt").value)
   //process
-  const area = lenghtA + lengthB / 2 * height
+  const area = lenghtA + (lengthB / 2) * height
   //output
-  document.getElementById("areaOfTrapazoid").innerHTML = "The area of your trapazoid is: " + area + "cm²"
+  document.getElementById("areaOfTrapazoid").innerHTML =
+    "The area of your trapazoid is: " + area + "cm²"
 }
