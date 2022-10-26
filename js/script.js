@@ -2,7 +2,7 @@
 // Created on: Oct 2022
 // This file contains the JS functions for index.html
 
-'use strict'
+"use strict"
 
 /**
  * Check servie worker.
@@ -21,7 +21,7 @@ function calculateArea() {
   const lengthB = parseFloat(document.getElementById("sideB").value)
   const height = parseFloat(document.getElementById("height").value)
   //process
-  const area = (lengthA + lengthB) / 2 * height
+  const area = ((lengthA + lengthB) / 2) * height
   //output
   document.getElementById("areaOftrapezoid").innerHTML =
     "The area of your trapezoid is: " + area + "cm²"
