@@ -17,8 +17,8 @@ if (navigator.serviceWorker) {
  * This function calculates the area of trapezoids and displays it.
  */
 function calculateArea() {
-  const lengthA = parseFloat(document.getElementById("sideA").value)
-  const lengthB = parseFloat(document.getElementById("sideB").value)
+  const lengthA = parseFloat(document.getElementById("side-a").value)
+  const lengthB = parseFloat(document.getElementById("side-b").value)
   const height = parseFloat(document.getElementById("height").value)
   //process
   const area = ((lengthA + lengthB) / 2) * height
